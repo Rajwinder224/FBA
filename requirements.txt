@@ -1,0 +1,9 @@
+flask
+flask-cors
+python-dotenv
+requests
+langchain
+pdfplumber
+langchain-community
+pymupdf
+gunicorn
