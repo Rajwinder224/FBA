@@ -161,7 +161,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "fd77e8b9-5668-4ba1-9aa2-16d789969fa7",
+            "lineageTag": "fd78e8b9-5668-4ba1-9aa2-16d789969fa7",
             "sourceColumn": "patient_last_name",
             "summarizeBy": "count"
           },
@@ -200,7 +200,7 @@
               }
             ],
             "dataType": "int64",
-            "lineageTag": "fd77e8b9-5668-4ba1-9aa2-16d789969fa7",
+            "lineageTag": "fd77e8b8-5668-4ba1-9aa2-16d789969ea7",
             "sourceColumn": "patient_waittime",
             "summarizeBy": "average"
           },
@@ -213,7 +213,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "342d0c80-0143-4c22-8200-4932352a609b",
+            "lineageTag": "343e0c80-0143-4c22-8200-4932352a609b",
             "sourceColumn": "department_referral",
             "summarizeBy": "count"
           }
