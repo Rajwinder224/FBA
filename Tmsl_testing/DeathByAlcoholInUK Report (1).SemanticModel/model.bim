@@ -653,6 +653,10 @@
         "showAsVariationsOnly": true
       }
     ],
+   "model": {
+    "tables": [
+  {
+    "name": "HospitalER",  
     "measures": [
       {
         "name": "Total Revenue",
@@ -667,5 +671,8 @@
         "expression": "COUNT(OrderID)"
       }
     ]
+   }
+  }
+]
   }
 }
