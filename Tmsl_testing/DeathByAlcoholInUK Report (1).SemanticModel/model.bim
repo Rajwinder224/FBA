@@ -1,5 +1,5 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
@@ -12,17 +12,17 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.141.1253.0 (25.03)+74f9999a1e95f78c739f3ea2b96ba340e9ba8729"
+        "value": "2.141.1451.0 (25.03)+5007b7650f7edbed506e31fcb76584cd6d711788"
       },
       {
         "name": "PBI_ProTooling",
         "value": "[\"DevMode\"]"
       }
     ],
-    "culture": "en-IN",
+    "culture": "en-US",
     "cultures": [
       {
-        "name": "en-IN",
+        "name": "en-US",
         "linguisticMetadata": {
           "content": {
             "Language": "en-US",
@@ -37,21 +37,15 @@
       "returnErrorValuesAsNull": true
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
-    "relationships": [
-      {
-        "name": "cd042b03-f659-4948-990a-99d60ed28922",
-        "fromColumn": "date",
-        "fromTable": "HospitalER",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_aef3ab50-4e84-48fe-b7e5-b3b6c3d6dd1a"
-      }
-    ],
     "sourceQueryCulture": "en-IN",
     "tables": [
       {
         "name": "HospitalER",
         "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
           {
             "name": "PBI_ResultType",
             "value": "Table"
@@ -64,28 +58,12 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
               }
             ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "89570dcd-4ceb-45d1-8cf4-c538fe0c707f",
+            "dataType": "datetime",
+            "lineageTag": "a1b2c3d4-e5f6-4g5h-6i7j-8k9l0m1n",
             "sourceColumn": "date",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Date Hierarchy",
-                  "table": "LocalDateTable_aef3ab50-4e84-48fe-b7e5-b3b6c3d6dd1a"
-                },
-                "isDefault": true,
-                "relationship": "cd042b03-f659-4948-990a-99d60ed28922"
-              }
-            ]
+            "summarizeBy": "none"
           },
           {
             "name": "patient_id",
@@ -96,9 +74,9 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "631bb0a0-a156-45da-a72d-2e027e0e6291",
+            "lineageTag": "a2b3c4d5-e6f7-4g7h-6i8j-8k9l0m1n",
             "sourceColumn": "patient_id",
-            "summarizeBy": "count"
+            "summarizeBy": "none"
           },
           {
             "name": "patient_gender",
@@ -109,9 +87,9 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "5601378f-b298-4573-acc7-c667eb1f9136",
+            "lineageTag": "a3b4c5d6-e7f8-4g8h-6i9j-8k9l0m1n",
             "sourceColumn": "patient_gender",
-            "summarizeBy": "count"
+            "summarizeBy": "none"
           },
           {
             "name": "patient_age",
@@ -122,9 +100,9 @@
               }
             ],
             "dataType": "int64",
-            "lineageTag": "ec837644-7fe3-4d46-8cc1-a314bd433ac1",
+            "lineageTag": "a4b5c6d7-e8f9-4g9h-6iaj-8k9l0m1n",
             "sourceColumn": "patient_age",
-            "summarizeBy": "average"
+            "summarizeBy": "none"
           },
           {
             "name": "patient_sat_score",
@@ -135,9 +113,9 @@
               }
             ],
             "dataType": "int64",
-            "lineageTag": "f1c7ff2d-2ed4-435b-a2e6-1c43fc0ff713",
+            "lineageTag": "a5b6c7d8-e9f0-4ga1-6hbj-8k9l0m1n",
             "sourceColumn": "patient_sat_score",
-            "summarizeBy": "average"
+            "summarizeBy": "none"
           },
           {
             "name": "patient_first_inital",
@@ -148,9 +126,9 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "cb8e6134-20f7-4797-b9bf-af4719b68d5c",
+            "lineageTag": "a6b7c8d9-e0f1-4ga2-6hbj-8k9l0m1n",
             "sourceColumn": "patient_first_inital",
-            "summarizeBy": "count"
+            "summarizeBy": "none"
           },
           {
             "name": "patient_last_name",
@@ -161,9 +139,9 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "fd78e8b9-5668-4ba1-9aa2-16d789969fa7",
+            "lineageTag": "a7b8c9d0-e1f2-4ga3-6hbj-8k9l0m1n",
             "sourceColumn": "patient_last_name",
-            "summarizeBy": "count"
+            "summarizeBy": "none"
           },
           {
             "name": "patient_race",
@@ -174,9 +152,9 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "342d0c80-0143-4c22-8200-4932352a609b",
+            "lineageTag": "a8b9c0d1-e2f3-4ga4-6hbj-8k9l0m1n",
             "sourceColumn": "patient_race",
-            "summarizeBy": "count"
+            "summarizeBy": "none"
           },
           {
             "name": "patient_admin_flag",
@@ -187,9 +165,9 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "cb9d6134-20f7-4797-b9bf-af4719b68d4b",
+            "lineageTag": "a9b0c1d2-e3f4-4ga5-6hbj-8k9l0m1n",
             "sourceColumn": "patient_admin_flag",
-            "summarizeBy": "count"
+            "summarizeBy": "none"
           },
           {
             "name": "patient_waittime",
@@ -200,9 +178,9 @@
               }
             ],
             "dataType": "int64",
-            "lineageTag": "fd77e8b8-5668-4ba1-9aa2-16d789969ea7",
+            "lineageTag": "aa1b2c3d-e4f5-4ga6-6hbj-8k9l0m1n",
             "sourceColumn": "patient_waittime",
-            "summarizeBy": "average"
+            "summarizeBy": "none"
           },
           {
             "name": "department_referral",
@@ -213,12 +191,32 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "343e0c80-0143-4c22-8200-4932352a609b",
+            "lineageTag": "ab2c3d4e-f5g6-4ga7-6hbj-8k9l0m1n",
             "sourceColumn": "department_referral",
-            "summarizeBy": "count"
+            "summarizeBy": "none"
           }
         ],
-        "lineageTag": "009736d0-e4c6-4cc8-8d45-e461eca60675",
+        "lineageTag": "a1b2c3d4-e5f6-4g5h-6i7j-8k9l0m1n",
+        "measures": [
+          {
+            "name": "Total Revenue",
+            "expression": "SUM(HospitalER[Revenue])",
+            "formatString": "0",
+            "lineageTag": "a2b3c4d5-e6f7-4g7h-6i8j-8k9l0m1n"
+          },
+          {
+            "name": "Average Discount",
+            "expression": "AVG(HospitalER[Discount])",
+            "formatString": "0",
+            "lineageTag": "a3b4c5d6-e7f8-4g8h-6i9j-8k9l0m1n"
+          },
+          {
+            "name": "Total Orders",
+            "expression": "COUNT(HospitalER[OrderID])",
+            "formatString": "0",
+            "lineageTag": "a4b5c6d7-e8f9-4g9h-6iaj-8k9l0m1n"
+          }
+        ],
         "partitions": [
           {
             "name": "HospitalER",
@@ -226,451 +224,19 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Odbc.Query('LIB CONNECT TO [Microsoft_SQL_Server_health-careserver.database.windows.net];', 'SELECT \"date\", \"patient_id\", \"patient_gender\", \"patient_age\", \"patient_sat_score\", \"patient_first_inital\", \"patient_last_name\", \"patient_race\", \"patient_admin_flag\", \"patient_waittime\", \"department_referral\" FROM \"health-care2025\")",
-                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
+                "    Source = Sql.Databases(\"health-careserver.database.windows.net\"),",
+                "    #\"HospitalER\" = Source{[Name=\"HospitalER\"]}[Data],",
+                "    dbo_HospitalER = #\"HospitalER\"{[Schema=\"dbo\",Item=\"HospitalER\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(dbo_HospitalER,{{\"date\", type datetime}, {\"patient_id\", type text}, {\"patient_gender\", type text}, {\"patient_age\", Int64.Type}, {\"patient_sat_score\", Int64.Type}, {\"patient_first_inital\", type text}, {\"patient_last_name\", type text}, {\"patient_race\", type text}, {\"patient_admin_flag\", type text}, {\"patient_waittime\", Int64.Type}, {\"department_referral\", type text}}),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Gender] <> \"Persons\") and ([Location] <> \"Location\"))",
                 "in",
-                "    #\"Promoted Headers\""
+                "    #\"Filtered Rows\""
               ],
               "type": "m"
             }
           }
         ]
-      },
-      {
-        "name": "DateTableTemplate_0241cf8a-88c9-4937-989d-4d802cbbea3f",
-        "annotations": [
-          {
-            "name": "__PBI_TemplateDateTable",
-            "value": "true"
-          },
-          {
-            "name": "DefaultItem",
-            "value": "DateHierarchy"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "bf4c8f8e-277b-4439-8750-f9d488707968",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Year",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "75a16ff8-e31a-4963-9d10-5cf0e5a0e5ab",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "05478bd5-74fc-4667-9ca9-1d3e73f58cbc",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Month",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "06760631-dc31-4ab3-a49c-28b24f030454",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "160e32d8-63ee-4f9e-8083-b8262d5cee0c",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Quarter",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Qtr \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "2a906954-c341-43ed-8846-84c18ed97e2f",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Day",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "5f7d61ca-b0ef-4b64-b19c-fd4eca2c8439",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Date Hierarchy",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Year",
-                "column": "Year",
-                "lineageTag": "eaa7a729-32e3-4070-bc4e-cea1049613dc",
-                "ordinal": 0
-              },
-              {
-                "name": "Quarter",
-                "column": "Quarter",
-                "lineageTag": "25a9d3f9-984f-4f13-bdf4-b7210b3a4abf",
-                "ordinal": 1
-              },
-              {
-                "name": "Month",
-                "column": "Month",
-                "lineageTag": "4d0df9fe-81df-47db-be0e-bf7ea2230221",
-                "ordinal": 2
-              },
-              {
-                "name": "Day",
-                "column": "Day",
-                "lineageTag": "72ab814e-3e19-40a2-b8f5-d96478e2046a",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "3690544b-aebd-43c3-91ba-dc0a365f5508"
-          }
-        ],
-        "isHidden": true,
-        "isPrivate": true,
-        "lineageTag": "ef1ff223-4c57-4cb3-8940-88791815ae6e",
-        "partitions": [
-          {
-            "name": "DateTableTemplate_0241cf8a-88c9-4937-989d-4d802cbbea3f",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
-              "type": "calculated"
-            }
-          }
-        ]
-      },
-      {
-        "name": "LocalDateTable_aef3ab50-4e84-48fe-b7e5-b3b6c3d6dd1a",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "207764c0-7a74-4a64-a37a-57c4d2f00b42",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Year",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "2a4b0b48-0d50-4468-a4c0-60c02a8e7d4c",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "2b8889ac-34b2-4047-a23c-d4f0a6a16f97",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Month",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "338c07f2-77e5-43ed-bf6a-f711a6a1ba0c",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "58ba42d9-cc9a-4cab-87cc-3490e17aedbe",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Quarter",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Qtr \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "95b20ef4-d3c0-4ca1-a239-3f7d358a40e3",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Day",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "9f9fb716-58a6-4014-a5d1-7f440936f061",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Date Hierarchy",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Year",
-                "column": "Year",
-                "lineageTag": "524a7ee5-788c-4d58-9531-92b30de5d81a",
-                "ordinal": 0
-              },
-              {
-                "name": "Quarter",
-                "column": "Quarter",
-                "lineageTag": "5932dc75-cd24-4796-b23f-8be9c94afdd5",
-                "ordinal": 1
-              },
-              {
-                "name": "Month",
-                "column": "Month",
-                "lineageTag": "a0563eab-4c6a-4689-a0f9-e8a5aa48f344",
-                "ordinal": 2
-              },
-              {
-                "name": "Day",
-                "column": "Day",
-                "lineageTag": "a2197a3f-f647-42b9-b0fa-85fd6ed77f0f",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "d3fbc947-92e4-4406-8203-6e753f8a4c6e"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "6d85909c-55e2-4082-a8f7-80110ff8f548",
-        "partitions": [
-          {
-            "name": "LocalDateTable_aef3ab50-4e84-48fe-b7e5-b3b6c3d6dd1a",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('HospitalER'[date])), 1, 1), Date(Year(MAX('HospitalER'[date])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      }
-    ],
-   "tables": [
-  {
-    "name": "HospitalER",  
-    "measures": [
-      {
-        "name": "Total Revenue",
-        "expression": "SUM(Revenue)"
-      },
-      {
-        "name": "Average Discount",
-        "expression": "AVG([Discount])"
-      },
-      {
-        "name": "Total Orders",
-        "expression": "COUNT(OrderID)"
       }
     ]
-   }
-]
-}
+  }
 }
