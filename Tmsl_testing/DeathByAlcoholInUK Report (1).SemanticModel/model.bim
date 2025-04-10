@@ -653,8 +653,7 @@
         "showAsVariationsOnly": true
       }
     ],
-   "model": {
-    "tables": [
+   "tables": [
   {
     "name": "HospitalER",  
     "measures": [
@@ -672,7 +671,6 @@
       }
     ]
    }
-  }
 ]
-  }
+}
 }
