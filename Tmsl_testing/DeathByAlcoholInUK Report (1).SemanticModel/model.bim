@@ -226,7 +226,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Odbc.Query('LIB CONNECT TO [Microsoft_SQL_Server_health-careserver.database.windows.net];', 'SELECT \"date\", \"patient_id\", \"patient_gender\", \"patient_age\", \"patient_sat_score\", \"patient_first_inital\", \"patient_last_name\", \"patient_race\", \"patient_admin_flag\", \"patient_waittime\", \"department_referral\" FROM \"health-care2025\".db... [truncated if too long]')",
+                "    Source = Odbc.Query('LIB CONNECT TO [Microsoft_SQL_Server_health-careserver.database.windows.net];', 'SELECT \"date\", \"patient_id\", \"patient_gender\", \"patient_age\", \"patient_sat_score\", \"patient_first_inital\", \"patient_last_name\", \"patient_race\", \"patient_admin_flag\", \"patient_waittime\", \"department_referral\" FROM \"health-care2025\")",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
                 "in",
                 "    #\"Promoted Headers\""
