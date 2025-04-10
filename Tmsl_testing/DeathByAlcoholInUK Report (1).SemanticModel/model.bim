@@ -60,7 +60,7 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "datetime",
+            "dataType": "dateTime",
             "lineageTag": "a1b2c3d4-e5f6-4g5h-6i7j-8k9l0m1n",
             "sourceColumn": "date",
             "summarizeBy": "none"
@@ -227,7 +227,7 @@
                 "    Source = Sql.Databases(\"health-careserver.database.windows.net\"),",
                 "    #\"HospitalER\" = Source{[Name=\"HospitalER\"]}[Data],",
                 "    dbo_HospitalER = #\"HospitalER\"{[Schema=\"dbo\",Item=\"HospitalER\"]}[Data],",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(dbo_HospitalER,{{\"date\", type datetime}, {\"patient_id\", type text}, {\"patient_gender\", type text}, {\"patient_age\", Int64.Type}, {\"patient_sat_score\", Int64.Type}, {\"patient_first_inital\", type text}, {\"patient_last_name\", type text}, {\"patient_race\", type text}, {\"patient_admin_flag\", type text}, {\"patient_waittime\", Int64.Type}, {\"department_referral\", type text}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(dbo_HospitalER,{{\"date\", type dateTime}, {\"patient_id\", type text}, {\"patient_gender\", type text}, {\"patient_age\", int64.Type}, {\"patient_sat_score\", int64.Type}, {\"patient_first_inital\", type text}, {\"patient_last_name\", type text}, {\"patient_race\", type text}, {\"patient_admin_flag\", type text}, {\"patient_waittime\", int64.Type}, {\"department_referral\", type text}}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Gender] <> \"Persons\") and ([Location] <> \"Location\"))",
                 "in",
                 "    #\"Filtered Rows\""
